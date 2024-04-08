@@ -18,19 +18,43 @@
                 
             <div class="nomeUser">
                 <div class="imgUser"></div>
-                <strong>vini</strong>
+                <strong>Vinicius</strong>
             </div>
+<br>
+                
+                <textarea name="textarea" placeholder="Comente aqui sua experiência" id="textarea"></textarea>
 
-                <form action="" class="formPost" id="formPost">
-                    <textarea name="textarea" placeholder="nada" id="textarea"></textarea>
+<p>Avalie sua taxa de satisfação com o pedido</p>
 
-                    
+                <ul class="avaliacao">
+                  <li class="star-icon ativo"></li>
+                  <li class="star-icon"></li>
+                  <li class="star-icon"></li>
+                  <li class="star-icon"></li>
+                  <li class="star-icon"></li>
+                </ul>
+                <script>
+                  let stars = document.querySelectorAll('.star-icon')
+
+                  document.addEventListener('click',function(e){
+
+                    let classStar = e.target.classList
+                    if(!classStar.contains('ativo')){
+
+                      stars.forEach(function(star){
+
+                        star.classList.remove('ativo')
+                      })
+                      classStar.add('ativo')
+                    }
+                  })
+                </script>
                       <div class="icons">
 
                         
                         
                       </div>
-
+<br>
                       <div class="botao">
                         <button type="submit" id="botao" >Publicar</button>
                       </div>
