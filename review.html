@@ -17,43 +17,49 @@
         
                 
             <div class="nomeUser">
-                <div class="imgUser"></div>
-                <strong>Vinicius</strong>
+                <div class="imgUser"><img src="image.png"></div>
+                <strong>Cristiano Ronaldo</strong>
             </div>
 <br>
                 
                 <textarea name="textarea" placeholder="Comente aqui sua experiência" id="textarea"></textarea>
 
+                <div class="icons">
+                  <a class="img" href="https://www.instagram.com/cristiano/"><img src="insta.png" alt=""></a>
+              </div>
+
 <p>Avalie sua taxa de satisfação com o pedido</p>
+ <div class="nada">
+  <ul class="avaliacao">
+    <li class="star-icon ativo"></li>
+    <li class="star-icon"></li>
+    <li class="star-icon"></li>
+    <li class="star-icon"></li>
+    <li class="star-icon"></li>
+  </ul>
+  <script>
+    let stars = document.querySelectorAll('.star-icon')
 
-                <ul class="avaliacao">
-                  <li class="star-icon ativo"></li>
-                  <li class="star-icon"></li>
-                  <li class="star-icon"></li>
-                  <li class="star-icon"></li>
-                  <li class="star-icon"></li>
-                </ul>
-                <script>
-                  let stars = document.querySelectorAll('.star-icon')
+    document.addEventListener('click',function(e){
 
-                  document.addEventListener('click',function(e){
+      let classStar = e.target.classList
+      if(!classStar.contains('ativo')){
 
-                    let classStar = e.target.classList
-                    if(!classStar.contains('ativo')){
+        stars.forEach(function(star){
 
-                      stars.forEach(function(star){
+          star.classList.remove('ativo')
+        })
+        classStar.add('ativo')
+      }
+    })
+  </script>
 
-                        star.classList.remove('ativo')
-                      })
-                      classStar.add('ativo')
-                    }
-                  })
-                </script>
-                      <div class="icons">
+ 
 
-                        
-                        
-                      </div>
+ </div>
+                
+
+                      
 <br>
                       <div class="botao">
                         <button type="submit" id="botao" >Publicar</button>

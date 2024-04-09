@@ -5,6 +5,7 @@
 }
 body{
     background-color: red;
+    
 }
 
 
@@ -30,8 +31,6 @@ body{
 .imgUser{
     width: 45px;
     height: 45px;
-    border-radius: 50%;
-    background: #333;
 }
 strong{
     font-size: 32px;
@@ -77,6 +76,22 @@ textarea{
 .star-icon:hover ~ .star-icon::before{
     content: '\2606';
 }
+.img{
+    width: 35px;
+    height: 35px;
+}
+/* .nada{
+    display: grid;
+    grid-template-areas:
+                        'avaliacao icons' ;
+    gap: 400px;
+}
+.avaliacao{
+    grid-area: avaliacao;
+}
+.icons{
+    grid-area: icons;
+} */
 
 
 @media screen and (min-width:900px){
