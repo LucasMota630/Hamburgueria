@@ -29,34 +29,36 @@
               </div>
 
 <p>Avalie sua taxa de satisfação com o pedido</p>
- <div class="nada">
+ 
   <ul class="avaliacao">
     <li class="star-icon ativo"></li>
     <li class="star-icon"></li>
     <li class="star-icon"></li>
     <li class="star-icon"></li>
     <li class="star-icon"></li>
+
+    <script>
+      let stars = document.querySelectorAll('.star-icon')
+  
+      document.addEventListener('click',function(e){
+  
+        let classStar = e.target.classList
+        if(!classStar.contains('ativo')){
+  
+          stars.forEach(function(star){
+  
+            star.classList.remove('ativo')
+          })
+          classStar.add('ativo')
+        }
+      })
+    </script>
   </ul>
-  <script>
-    let stars = document.querySelectorAll('.star-icon')
-
-    document.addEventListener('click',function(e){
-
-      let classStar = e.target.classList
-      if(!classStar.contains('ativo')){
-
-        stars.forEach(function(star){
-
-          star.classList.remove('ativo')
-        })
-        classStar.add('ativo')
-      }
-    })
-  </script>
+  
 
  
 
- </div>
+
                 
  
 <br>
@@ -64,11 +66,54 @@
                         <button type="submit" id="botao" >Publicar</button>
                       </div>
 
-                      
+                      <p>
+                      <hr> 
+<!-- Parte de comentarios fakes -->
+<div class="reviews">
+    <p class="titulo">Reviews</p>
+<!-- Fake 1 -->
+    <div class="nomeUser1">
+      <div class="imgUser1"></div>
+      <p class="name">Lucas Moraes</p>
 
+      <ul class="avaliacao">
+        <li class="star-icon "></li>
+        <li class="star-icon"></li>
+        <li class="star-icon"></li>
+        <li class="star-icon "></li>
+        <li class="star-icon ativo"></li>
+      </ul>
+  </div>
+<!-- Fake 2 -->
+    <div class="nomeUser1">
+      <div class="imgUser2"></div>
+      <p class="name">Vini do Grau</p>
+      <ul class="avaliacao">
+        <li class="star-icon "></li>
+        <li class="star-icon"></li>
+        <li class="star-icon"></li>
+        <li class="star-icon "></li>
+        <li class="star-icon ativo"></li>
+      </ul>
+  </div>
+<!-- Fake 3 -->
+    <div class="nomeUser1">
+      <div class="imgUser3"></div>
+      <p class="name">Wallace Pedroso</p>
+      <ul class="avaliacao">
+        <li class="star-icon "></li>
+        <li class="star-icon"></li>
+        <li class="star-icon"></li>
+        <li class="star-icon ativo"></li>
+        <li class="star-icon"></li>
+      </ul>
+  </div>
+  
+</div>
+              
                     </div>
                   </form>
-                  <hr>           
+                           
             </div>
 
 
