@@ -27,11 +27,13 @@ body{
     margin: auto;
     margin-top: 25px;
 }
-.tudo{
-    margin-top: 500px;
-}
+
 h1{
     text-align: center;
+    text-shadow: 4px 5px 5px blue;
+    color: #FF0077;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h3{
    color: #FF0077;
@@ -55,9 +57,10 @@ table,th,td{
     width: 80px;
     height: 100%;
     background-color: #202020;
-    padding: 40px 0px 550px 1%;
+    padding: 40px  0px 300px 1%;
     box-shadow: 3px 0 0 #FF0077;
     position: fixed; 
+    overflow: hidden;
     
     top: 0;
     left: 0;
@@ -68,6 +71,80 @@ nav.menu-lateral.expandir{
     transition: 0.5s;
 
 }
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration:0;
+    border:0;
+    vertical-align:baseline;
+    background:none;
+    color:#000;
+    font-size:100%;
+    list-style:none;
+}
+
+    .cardapio-inteiro {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        color: white;
+        margin: 0 0 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cartoes {
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cartao {
+        width: 900px;
+        max-height: 450px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .card {
+        width: 22.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card>figure {
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        margin: 0 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: #15234ba1 3px 3px 3px;
+    }
+    
+    .card>figure:hover {
+        background-color: rgb(20, 93, 228);
+    }
+    
+    .card>figure>img {
+        width: 240px;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+
+   
+
+    
 .btn-expandir{
     width: 100%;
     padding-left: 10px;
@@ -121,6 +198,7 @@ ul li.item-menu a .txt-link{
     display: flex;
     line-height: 40px;
 }
+
 
 nav.menu-lateral.expandir .txt-link{
     margin-left: 40px;
