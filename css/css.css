@@ -1,8 +1,10 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
+    border:0;
+
 }
 body{
     
@@ -10,13 +12,7 @@ body{
     background-image: url(sssss.jpg);
     background-repeat: no-repeat;
     background-size:100%;
-
-}
-.cardapi{
-  justify-items: center;
-  margin: 20px auto;
-  text-shadow: 4px 4px 5px rgb(151, 151, 255);
-  color: #aa004f;
+    
 }
 .iframe{
     border-radius: 20px;
@@ -29,6 +25,7 @@ body{
 }
 
 h1{
+    margin-top: 500px;
     text-align: center;
     text-shadow: 4px 5px 5px blue;
     color: #FF0077;
@@ -57,7 +54,7 @@ table,th,td{
     width: 80px;
     height: 100%;
     background-color: #202020;
-    padding: 40px  0px 300px 1%;
+    padding: 40px  0px 550px 1%;
     box-shadow: 3px 0 0 #FF0077;
     position: fixed; 
     overflow: hidden;
@@ -71,75 +68,199 @@ nav.menu-lateral.expandir{
     transition: 0.5s;
 
 }
-*{
-    margin:0;
-    padding:0;
-    border:0;
-    text-decoration:0;
-    border:0;
-    vertical-align:baseline;
-    background:none;
-    color:#000;
-    font-size:100%;
-    list-style:none;
+.qualquer{
+    background-color: white;
+    border-radius: 5px;
+    
+}
+.horario{
+    margin-top: 100px;
 }
 
-    .cardapio-inteiro {
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        color: white;
-        margin: 0 0 40px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .cartoes {
-        width: 100%;
+
+    .cardapio-inteiro{
+        /* background-color: rgb(255, 255, 255); */
         padding: 40px;
-        display: flex;
-        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
+        gap: 10px;
+        grid-template-areas: "card card1 card2 card3 card4"
+                             "card5 card6 card7 card8 card9";
     }
     
-    .cartao {
-        width: 900px;
-        max-height: 450px;
+    /* .cardapio-inteiro>.cartoes>.cartoe1{
+        background-color: rgb(255, 255, 255);
+        padding: 40px;
+        width: 100%;
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+        justify-content: space-around;
+    } */
     
-    .card {
-        width: 22.5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .card>figure {
+    .card{
         color: black;
         background-color: white;
         border-radius: 5px;
-        margin: 0 0 50px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+grid-area: card;
         box-shadow: #15234ba1 3px 3px 3px;
     }
-    
-    .card>figure:hover {
+    .card:hover {
         background-color: rgb(20, 93, 228);
     }
     
-    .card>figure>img {
-        width: 240px;
-        height: 200px;
+    .card>img {
+        width: 200px;
+        height: 160px;
         border-radius: 5px;
     }
+
+    .card1{
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+grid-area: card1;
+        box-shadow: #15234ba1 3px 3px 3px; 
+    }
+    .card1:hover {
+        background-color: rgb(20, 93, 228);
+    }
+    .card1>img {
+        width: 200px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    
+    
+    .card2{
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+grid-area: card2;
+        box-shadow: #15234ba1 3px 3px 3px; 
+    }
+    .card2:hover {
+        background-color: rgb(20, 93, 228);
+    }
+    .card2>img {
+        width: 200px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    
+    .card3{
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+grid-area: card3;
+        box-shadow: #15234ba1 3px 3px 3px;
+    }
+    .card3:hover {
+        background-color: rgb(20, 93, 228);
+    }
+    .card3>img {
+        width: 200px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    .card4{
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+grid-area: card4;
+        box-shadow: #15234ba1 3px 3px 3px;
+    }
+    .card4:hover {
+        background-color: rgb(20, 93, 228);
+    }
+    .card4>img {
+        width: 200px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    .card5{
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+grid-area: card5;
+        box-shadow: #15234ba1 3px 3px 3px;
+    }
+    .card5:hover {
+        background-color: rgb(20, 93, 228);
+    }
+    .card5>img {
+        width: 200px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    .card6{
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+grid-area: card6;
+        box-shadow: #15234ba1 3px 3px 3px;
+    }
+    .card6:hover {
+        background-color: rgb(20, 93, 228);
+    }
+    .card6>img {
+        width: 200px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    .card7{
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+grid-area: card7;
+        box-shadow: #15234ba1 3px 3px 3px;
+    }
+    .card7:hover {
+        background-color: rgb(20, 93, 228);
+    }
+    .card7>img {
+        width: 200px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    .card8{
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+grid-area: card8;
+        box-shadow: #15234ba1 3px 3px 3px;
+    }
+    .card8:hover {
+        background-color: rgb(20, 93, 228);
+    }
+    .card8>img {
+        width: 200px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    .card9{
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+grid-area: card9;
+        box-shadow: #15234ba1 3px 3px 3px;
+    }
+    .card9:hover {
+        background-color: rgb(20, 93, 228);
+    }
+    .card9>img {
+        width: 200px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    
+    
+    
+    
+    
+   
+
 
 
    
