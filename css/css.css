@@ -75,6 +75,8 @@ nav.menu-lateral.expandir{
 }
 .horario{
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -371,7 +373,7 @@ nav.menu-lateral.expandir .txt-link{
 
 
 
-@media screen and (min-width:950px){
+@media screen and (min-width:600px){
     .intro{
         display: flex;
         flex-direction: column;
@@ -401,7 +403,7 @@ nav.menu-lateral.expandir .txt-link{
         width: 90%;
     }
 }
-@media screen and (max-width:950px){
+@media screen and (max-width:600px){
     .intro{
         display: flex;
         flex-direction: column;
@@ -426,4 +428,26 @@ nav.menu-lateral.expandir .txt-link{
         align-content: center;
         width: 100%;
     }
+    .cardapio-inteiro{
+        /* background-color: rgb(255, 255, 255); */
+        padding: 40px;
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 10px;
+        grid-template-areas: "card card1 "
+                             "card2 card3 "
+                             "card4 card5"
+                             "card6 card7" 
+                             "card8 card9";
+    }
+    .qualquer{
+        background-color: white;
+        padding: auto;
+        border-radius: 5px;
+        
+    }
+
 }
